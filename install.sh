@@ -41,7 +41,7 @@ PH_TEST=true . "${PIHOLE_INSTALL}"
   echo "PIHOLE_DNS_1=8.8.8.8"
   echo "QUERY_LOGGING=true"
   echo "INSTALL_WEB_SERVER=true"
-  echo "INSTALL_WEB_INTERFACE=true"
+  echo "INSTALL_WEB_INTERFACE=false"
   echo "LIGHTTPD_ENABLED=true"
 }>> "${setupVars}"
 source $setupVars

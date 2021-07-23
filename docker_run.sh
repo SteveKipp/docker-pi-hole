@@ -9,7 +9,7 @@ PIHOLE_BASE="${PIHOLE_BASE:-$(pwd)}"
 docker run -d \
     --name pihole \
     -p 53:53/tcp -p 53:53/udp \
-    -p 80:80 \
+    #-p 80:80 \
     -e TZ="America/Chicago" \
     -v "${PIHOLE_BASE}/etc-pihole/:/etc/pihole/" \
     -v "${PIHOLE_BASE}/etc-dnsmasq.d/:/etc/dnsmasq.d/" \

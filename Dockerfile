@@ -20,10 +20,10 @@ ADD s6/debian-root /
 COPY s6/service /usr/local/bin/service
 
 # php config start passes special ENVs into
-ARG PHP_ENV_CONFIG
-ENV PHP_ENV_CONFIG "${PHP_ENV_CONFIG}"
-ARG PHP_ERROR_LOG
-ENV PHP_ERROR_LOG "${PHP_ERROR_LOG}"
+# ARG PHP_ENV_CONFIG
+# ENV PHP_ENV_CONFIG "${PHP_ENV_CONFIG}"
+# ARG PHP_ERROR_LOG
+# ENV PHP_ERROR_LOG "${PHP_ERROR_LOG}"
 COPY ./start.sh /
 COPY ./bash_functions.sh /
 
